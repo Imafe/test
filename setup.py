@@ -18,7 +18,7 @@ def from_here(relative_path):
 
 
 requirements_txt = list(map(str, map(
-    attrgetter("req"),
+    attrgetter("requirements"),
     parse_requirements(from_here("requirements.txt"), session="")
 )))
 
